@@ -1,0 +1,14 @@
+/.DS_Store
+UserInterfaceState.xcuserstate
+*.xcuserstate
+build/
+DerivedData/
+.DS_Store
+.DS_Store?
+*.pbxuser
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+/UserInterfaceState.xcuserstate
+
+
