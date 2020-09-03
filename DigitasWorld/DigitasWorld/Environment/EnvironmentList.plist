@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QA</key>
+	<dict>
+		<key>api-key</key>
+		<string>475eebcce4msh1e04982ca510f1bp148de4jsn7d672619f9c0</string>
+		<key>api-host</key>
+		<string>restcountries-v1.p.rapidapi.com</string>
+		<key>base-url</key>
+		<string>https://restcountries-v1.p.rapidapi.com/</string>
+	</dict>
+	<key>DEV</key>
+	<dict>
+		<key>api-key</key>
+		<string>475eebcce4msh1e04982ca510f1bp148de4jsn7d672619f9c0</string>
+		<key>api-host</key>
+		<string>restcountries-v1.p.rapidapi.com</string>
+		<key>base-url</key>
+		<string>https://restcountries-v1.p.rapidapi.com/</string>
+	</dict>
+	<key>PROD</key>
+	<dict>
+		<key>api-key</key>
+		<string>475eebcce4msh1e04982ca510f1bp148de4jsn7d672619f9c0</string>
+		<key>api-host</key>
+		<string>restcountries-v1.p.rapidapi.com</string>
+		<key>base-url</key>
+		<string>https://restcountries-v1.p.rapidapi.com/</string>
+	</dict>
+</dict>
+</plist>

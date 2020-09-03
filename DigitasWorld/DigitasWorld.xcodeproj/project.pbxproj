@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38828F58160F2CD29ABF7232 /* Pods_DigitasWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD7AA52F71D55DD63876BF9 /* Pods_DigitasWorld.framework */; };
+		D3874E9B25003C2100FD2B51 /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874E9A25003C2100FD2B51 /* CountryDetailVC.swift */; };
+		D3874E9D25003C4800FD2B51 /* CountryDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874E9C25003C4800FD2B51 /* CountryDetailPresenter.swift */; };
+		D3874E9F25003C5D00FD2B51 /* CountryDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874E9E25003C5D00FD2B51 /* CountryDetailRouter.swift */; };
+		D3874EA125003C8700FD2B51 /* CountryDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874EA025003C8700FD2B51 /* CountryDetailInteractor.swift */; };
+		D3899D3524FFD30E00BD9104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D3424FFD30E00BD9104 /* AppDelegate.swift */; };
+		D3899D3724FFD30E00BD9104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D3624FFD30E00BD9104 /* SceneDelegate.swift */; };
+		D3899D3C24FFD30E00BD9104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3899D3A24FFD30E00BD9104 /* Main.storyboard */; };
+		D3899D3F24FFD30E00BD9104 /* DigitasWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3899D3D24FFD30E00BD9104 /* DigitasWorld.xcdatamodeld */; };
+		D3899D4124FFD31000BD9104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3899D4024FFD31000BD9104 /* Assets.xcassets */; };
+		D3899D4424FFD31000BD9104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3899D4224FFD31000BD9104 /* LaunchScreen.storyboard */; };
+		D3899D5524FFD75A00BD9104 /* EnvironmentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3899D5424FFD75A00BD9104 /* EnvironmentList.plist */; };
+		D3899D5724FFDABE00BD9104 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D5624FFDABE00BD9104 /* Configuration.swift */; };
+		D3899D5A24FFEAB900BD9104 /* RemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D5924FFEAB900BD9104 /* RemoteClient.swift */; };
+		D3899D5C24FFEB1500BD9104 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D5B24FFEB1500BD9104 /* ResourceType.swift */; };
+		D3899D5E24FFEFF800BD9104 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D5D24FFEFF800BD9104 /* Constant.swift */; };
+		D3899D6024FFF5EF00BD9104 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D5F24FFF5EF00BD9104 /* CustomError.swift */; };
+		D3899D6324FFFB2600BD9104 /* CountryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D6224FFFB2600BD9104 /* CountryListVC.swift */; };
+		D3899D6524FFFB4300BD9104 /* CountryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D6424FFFB4300BD9104 /* CountryListPresenter.swift */; };
+		D3899D6724FFFB5800BD9104 /* CountryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D6624FFFB5800BD9104 /* CountryListRouter.swift */; };
+		D3899D6924FFFB7400BD9104 /* CountryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D6824FFFB7300BD9104 /* CountryListInteractor.swift */; };
+		D3899D6C24FFFF7400BD9104 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D6B24FFFF7400BD9104 /* BaseProtocol.swift */; };
+		D3899D6E25000CA200BD9104 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D6D25000CA200BD9104 /* Country.swift */; };
+		D3899D732500172900BD9104 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D712500172900BD9104 /* CountryCell.swift */; };
+		D3899D742500172900BD9104 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3899D722500172900BD9104 /* CountryCell.xib */; };
+		D3899D7625001B3300BD9104 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D7525001B3300BD9104 /* UIViewController.swift */; };
+		D3899D7925001F0600BD9104 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D7825001F0600BD9104 /* Int.swift */; };
+		D3899D7B25001F9400BD9104 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D7A25001F9400BD9104 /* Double.swift */; };
+		D3899D7D2500226500BD9104 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D7C2500226500BD9104 /* Array.swift */; };
+		D3942CEB2500F71600B51391 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3942CEA2500F71600B51391 /* Log.swift */; };
+		D3942CEE25010BA500B51391 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3942CED25010BA500B51391 /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03DD30E0F7959160F51146C7 /* Pods-DigitasWorld.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.debug-qa.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.debug-qa.xcconfig"; sourceTree = "<group>"; };
+		11E0C798969268C993A3D9CC /* Pods-DigitasWorld.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.release-dev.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.release-dev.xcconfig"; sourceTree = "<group>"; };
+		3AC4D4F20EDBEDC32592E4BE /* Pods-DigitasWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.debug.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		55877803D2A54E071663009B /* Pods-DigitasWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.release.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.release.xcconfig"; sourceTree = "<group>"; };
+		9C13C923A87DF7F6643B6BE7 /* Pods-DigitasWorld.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.release-qa.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.release-qa.xcconfig"; sourceTree = "<group>"; };
+		CCCEB293F6987447A1CDD11C /* Pods-DigitasWorld.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.debug-dev.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		D3874E9A25003C2100FD2B51 /* CountryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
+		D3874E9C25003C4800FD2B51 /* CountryDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailPresenter.swift; sourceTree = "<group>"; };
+		D3874E9E25003C5D00FD2B51 /* CountryDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRouter.swift; sourceTree = "<group>"; };
+		D3874EA025003C8700FD2B51 /* CountryDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailInteractor.swift; sourceTree = "<group>"; };
+		D3899D3124FFD30E00BD9104 /* DigitasWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitasWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3899D3424FFD30E00BD9104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3899D3624FFD30E00BD9104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3899D3B24FFD30E00BD9104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3899D3E24FFD30E00BD9104 /* DigitasWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigitasWorld.xcdatamodel; sourceTree = "<group>"; };
+		D3899D4024FFD31000BD9104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3899D4324FFD31000BD9104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3899D4524FFD31000BD9104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3899D5424FFD75A00BD9104 /* EnvironmentList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EnvironmentList.plist; sourceTree = "<group>"; };
+		D3899D5624FFDABE00BD9104 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D3899D5924FFEAB900BD9104 /* RemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteClient.swift; sourceTree = "<group>"; };
+		D3899D5B24FFEB1500BD9104 /* ResourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceType.swift; sourceTree = "<group>"; };
+		D3899D5D24FFEFF800BD9104 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D3899D5F24FFF5EF00BD9104 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		D3899D6224FFFB2600BD9104 /* CountryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListVC.swift; sourceTree = "<group>"; };
+		D3899D6424FFFB4300BD9104 /* CountryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListPresenter.swift; sourceTree = "<group>"; };
+		D3899D6624FFFB5800BD9104 /* CountryListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListRouter.swift; sourceTree = "<group>"; };
+		D3899D6824FFFB7300BD9104 /* CountryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListInteractor.swift; sourceTree = "<group>"; };
+		D3899D6B24FFFF7400BD9104 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		D3899D6D25000CA200BD9104 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		D3899D712500172900BD9104 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		D3899D722500172900BD9104 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		D3899D7525001B3300BD9104 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D3899D7825001F0600BD9104 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		D3899D7A25001F9400BD9104 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		D3899D7C2500226500BD9104 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		D3942CEA2500F71600B51391 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		D3942CED25010BA500B51391 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DAD7AA52F71D55DD63876BF9 /* Pods_DigitasWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitasWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3899D2E24FFD30E00BD9104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38828F58160F2CD29ABF7232 /* Pods_DigitasWorld.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F953069EB98E83312E4233E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AC4D4F20EDBEDC32592E4BE /* Pods-DigitasWorld.debug.xcconfig */,
+				CCCEB293F6987447A1CDD11C /* Pods-DigitasWorld.debug-dev.xcconfig */,
+				03DD30E0F7959160F51146C7 /* Pods-DigitasWorld.debug-qa.xcconfig */,
+				55877803D2A54E071663009B /* Pods-DigitasWorld.release.xcconfig */,
+				11E0C798969268C993A3D9CC /* Pods-DigitasWorld.release-dev.xcconfig */,
+				9C13C923A87DF7F6643B6BE7 /* Pods-DigitasWorld.release-qa.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96A4B20E22BF33026C7CC26A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD7AA52F71D55DD63876BF9 /* Pods_DigitasWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3874E9925003BF200FD2B51 /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D3874E9A25003C2100FD2B51 /* CountryDetailVC.swift */,
+				D3874E9C25003C4800FD2B51 /* CountryDetailPresenter.swift */,
+				D3874E9E25003C5D00FD2B51 /* CountryDetailRouter.swift */,
+				D3874EA025003C8700FD2B51 /* CountryDetailInteractor.swift */,
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
+		D3899D2824FFD30E00BD9104 = {
+			isa = PBXGroup;
+			children = (
+				D3899D3324FFD30E00BD9104 /* DigitasWorld */,
+				D3899D3224FFD30E00BD9104 /* Products */,
+				7F953069EB98E83312E4233E /* Pods */,
+				96A4B20E22BF33026C7CC26A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3899D3224FFD30E00BD9104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3899D3124FFD30E00BD9104 /* DigitasWorld.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3899D3324FFD30E00BD9104 /* DigitasWorld */ = {
+			isa = PBXGroup;
+			children = (
+				D3942CEC25010B8F00B51391 /* Network */,
+				D3942CE92500F70600B51391 /* Log */,
+				D3874E9925003BF200FD2B51 /* CountryDetail */,
+				D3899D7725001B3B00BD9104 /* Extension */,
+				D3899D6A24FFFF6000BD9104 /* Base */,
+				D3899D6124FFFAFF00BD9104 /* CountryList */,
+				D3899D5824FFEA6900BD9104 /* Shared */,
+				D3899D5324FFD4FF00BD9104 /* Environment */,
+				D3899D3424FFD30E00BD9104 /* AppDelegate.swift */,
+				D3899D3624FFD30E00BD9104 /* SceneDelegate.swift */,
+				D3899D3A24FFD30E00BD9104 /* Main.storyboard */,
+				D3899D4024FFD31000BD9104 /* Assets.xcassets */,
+				D3899D4224FFD31000BD9104 /* LaunchScreen.storyboard */,
+				D3899D4524FFD31000BD9104 /* Info.plist */,
+				D3899D3D24FFD30E00BD9104 /* DigitasWorld.xcdatamodeld */,
+			);
+			path = DigitasWorld;
+			sourceTree = "<group>";
+		};
+		D3899D5324FFD4FF00BD9104 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				D3899D5424FFD75A00BD9104 /* EnvironmentList.plist */,
+				D3899D5624FFDABE00BD9104 /* Configuration.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		D3899D5824FFEA6900BD9104 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D3899D5924FFEAB900BD9104 /* RemoteClient.swift */,
+				D3899D5B24FFEB1500BD9104 /* ResourceType.swift */,
+				D3899D5D24FFEFF800BD9104 /* Constant.swift */,
+				D3899D5F24FFF5EF00BD9104 /* CustomError.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D3899D6124FFFAFF00BD9104 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				D3899D6224FFFB2600BD9104 /* CountryListVC.swift */,
+				D3899D6424FFFB4300BD9104 /* CountryListPresenter.swift */,
+				D3899D6624FFFB5800BD9104 /* CountryListRouter.swift */,
+				D3899D6824FFFB7300BD9104 /* CountryListInteractor.swift */,
+				D3899D6D25000CA200BD9104 /* Country.swift */,
+				D3899D712500172900BD9104 /* CountryCell.swift */,
+				D3899D722500172900BD9104 /* CountryCell.xib */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		D3899D6A24FFFF6000BD9104 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D3899D6B24FFFF7400BD9104 /* BaseProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D3899D7725001B3B00BD9104 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3899D7525001B3300BD9104 /* UIViewController.swift */,
+				D3899D7825001F0600BD9104 /* Int.swift */,
+				D3899D7A25001F9400BD9104 /* Double.swift */,
+				D3899D7C2500226500BD9104 /* Array.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D3942CE92500F70600B51391 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				D3942CEA2500F71600B51391 /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		D3942CEC25010B8F00B51391 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3942CED25010BA500B51391 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3899D3024FFD30E00BD9104 /* DigitasWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3899D4824FFD31000BD9104 /* Build configuration list for PBXNativeTarget "DigitasWorld" */;
+			buildPhases = (
+				CA684D41F235217E259FDC25 /* [CP] Check Pods Manifest.lock */,
+				D3899D2D24FFD30E00BD9104 /* Sources */,
+				D3899D2E24FFD30E00BD9104 /* Frameworks */,
+				D3899D2F24FFD30E00BD9104 /* Resources */,
+				28A7A9A028D640C82ECC8E1F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitasWorld;
+			productName = DigitasWorld;
+			productReference = D3899D3124FFD30E00BD9104 /* DigitasWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3899D2924FFD30E00BD9104 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "eSoft Technologies";
+				TargetAttributes = {
+					D3899D3024FFD30E00BD9104 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D3899D2C24FFD30E00BD9104 /* Build configuration list for PBXProject "DigitasWorld" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3899D2824FFD30E00BD9104;
+			productRefGroup = D3899D3224FFD30E00BD9104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3899D3024FFD30E00BD9104 /* DigitasWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3899D2F24FFD30E00BD9104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3899D742500172900BD9104 /* CountryCell.xib in Resources */,
+				D3899D5524FFD75A00BD9104 /* EnvironmentList.plist in Resources */,
+				D3899D4424FFD31000BD9104 /* LaunchScreen.storyboard in Resources */,
+				D3899D4124FFD31000BD9104 /* Assets.xcassets in Resources */,
+				D3899D3C24FFD30E00BD9104 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28A7A9A028D640C82ECC8E1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA684D41F235217E259FDC25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigitasWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3899D2D24FFD30E00BD9104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3899D6E25000CA200BD9104 /* Country.swift in Sources */,
+				D3874E9D25003C4800FD2B51 /* CountryDetailPresenter.swift in Sources */,
+				D3899D6924FFFB7400BD9104 /* CountryListInteractor.swift in Sources */,
+				D3899D732500172900BD9104 /* CountryCell.swift in Sources */,
+				D3899D5C24FFEB1500BD9104 /* ResourceType.swift in Sources */,
+				D3899D6524FFFB4300BD9104 /* CountryListPresenter.swift in Sources */,
+				D3899D6724FFFB5800BD9104 /* CountryListRouter.swift in Sources */,
+				D3899D7925001F0600BD9104 /* Int.swift in Sources */,
+				D3899D5724FFDABE00BD9104 /* Configuration.swift in Sources */,
+				D3874E9B25003C2100FD2B51 /* CountryDetailVC.swift in Sources */,
+				D3899D6C24FFFF7400BD9104 /* BaseProtocol.swift in Sources */,
+				D3899D7D2500226500BD9104 /* Array.swift in Sources */,
+				D3874E9F25003C5D00FD2B51 /* CountryDetailRouter.swift in Sources */,
+				D3899D5E24FFEFF800BD9104 /* Constant.swift in Sources */,
+				D3942CEB2500F71600B51391 /* Log.swift in Sources */,
+				D3899D3524FFD30E00BD9104 /* AppDelegate.swift in Sources */,
+				D3874EA125003C8700FD2B51 /* CountryDetailInteractor.swift in Sources */,
+				D3899D6024FFF5EF00BD9104 /* CustomError.swift in Sources */,
+				D3899D3F24FFD30E00BD9104 /* DigitasWorld.xcdatamodeld in Sources */,
+				D3899D5A24FFEAB900BD9104 /* RemoteClient.swift in Sources */,
+				D3899D3724FFD30E00BD9104 /* SceneDelegate.swift in Sources */,
+				D3899D7625001B3300BD9104 /* UIViewController.swift in Sources */,
+				D3942CEE25010BA500B51391 /* NetworkManager.swift in Sources */,
+				D3899D7B25001F9400BD9104 /* Double.swift in Sources */,
+				D3899D6324FFFB2600BD9104 /* CountryListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3899D3A24FFD30E00BD9104 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3899D3B24FFD30E00BD9104 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3899D4224FFD31000BD9104 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3899D4324FFD31000BD9104 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3899D4624FFD31000BD9104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3899D4724FFD31000BD9104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3899D4924FFD31000BD9104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC4D4F20EDBEDC32592E4BE /* Pods-DigitasWorld.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DISPLAY_NAME = Digitas;
+				ENVIRONMENT = PROD;
+				INFOPLIST_FILE = DigitasWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3899D4A24FFD31000BD9104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55877803D2A54E071663009B /* Pods-DigitasWorld.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DISPLAY_NAME = Digitas;
+				ENVIRONMENT = PROD;
+				INFOPLIST_FILE = DigitasWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3899D4B24FFD32600BD9104 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-DEV";
+		};
+		D3899D4C24FFD32600BD9104 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCCEB293F6987447A1CDD11C /* Pods-DigitasWorld.debug-dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DISPLAY_NAME = "Digitas-DEV";
+				ENVIRONMENT = DEV;
+				INFOPLIST_FILE = DigitasWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-DEV";
+		};
+		D3899D4D24FFD33700BD9104 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-DEV";
+		};
+		D3899D4E24FFD33700BD9104 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E0C798969268C993A3D9CC /* Pods-DigitasWorld.release-dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DISPLAY_NAME = "Digitas-DEV";
+				ENVIRONMENT = DEV;
+				INFOPLIST_FILE = DigitasWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-DEV";
+		};
+		D3899D4F24FFD35600BD9104 /* Debug-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-QA";
+		};
+		D3899D5024FFD35600BD9104 /* Debug-QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DD30E0F7959160F51146C7 /* Pods-DigitasWorld.debug-qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DISPLAY_NAME = "Digitas-QA";
+				ENVIRONMENT = QA;
+				INFOPLIST_FILE = DigitasWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-QA";
+		};
+		D3899D5124FFD36300BD9104 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-QA";
+		};
+		D3899D5224FFD36300BD9104 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C13C923A87DF7F6643B6BE7 /* Pods-DigitasWorld.release-qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DISPLAY_NAME = "Digitas-QA";
+				ENVIRONMENT = QA;
+				INFOPLIST_FILE = DigitasWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-QA";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3899D2C24FFD30E00BD9104 /* Build configuration list for PBXProject "DigitasWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3899D4624FFD31000BD9104 /* Debug */,
+				D3899D4B24FFD32600BD9104 /* Debug-DEV */,
+				D3899D4F24FFD35600BD9104 /* Debug-QA */,
+				D3899D4724FFD31000BD9104 /* Release */,
+				D3899D4D24FFD33700BD9104 /* Release-DEV */,
+				D3899D5124FFD36300BD9104 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3899D4824FFD31000BD9104 /* Build configuration list for PBXNativeTarget "DigitasWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3899D4924FFD31000BD9104 /* Debug */,
+				D3899D4C24FFD32600BD9104 /* Debug-DEV */,
+				D3899D5024FFD35600BD9104 /* Debug-QA */,
+				D3899D4A24FFD31000BD9104 /* Release */,
+				D3899D4E24FFD33700BD9104 /* Release-DEV */,
+				D3899D5224FFD36300BD9104 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3899D3D24FFD30E00BD9104 /* DigitasWorld.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3899D3E24FFD30E00BD9104 /* DigitasWorld.xcdatamodel */,
+			);
+			currentVersion = D3899D3E24FFD30E00BD9104 /* DigitasWorld.xcdatamodel */;
+			path = DigitasWorld.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3899D2924FFD30E00BD9104 /* Project object */;
+}
