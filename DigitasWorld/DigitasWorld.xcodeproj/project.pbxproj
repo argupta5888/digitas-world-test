@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		38828F58160F2CD29ABF7232 /* Pods_DigitasWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD7AA52F71D55DD63876BF9 /* Pods_DigitasWorld.framework */; };
+		D37E6CB0250222880020944B /* Country_MO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E6CAE250222880020944B /* Country_MO+CoreDataClass.swift */; };
+		D37E6CB1250222880020944B /* Country_MO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E6CAF250222880020944B /* Country_MO+CoreDataProperties.swift */; };
+		D37E6CB3250222C60020944B /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E6CB2250222C60020944B /* CoreDataService.swift */; };
+		D37E6CB5250226E20020944B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E6CB4250226E20020944B /* CoreDataHelper.swift */; };
 		D3874E9B25003C2100FD2B51 /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874E9A25003C2100FD2B51 /* CountryDetailVC.swift */; };
 		D3874E9D25003C4800FD2B51 /* CountryDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874E9C25003C4800FD2B51 /* CountryDetailPresenter.swift */; };
 		D3874E9F25003C5D00FD2B51 /* CountryDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3874E9E25003C5D00FD2B51 /* CountryDetailRouter.swift */; };
@@ -47,6 +51,10 @@
 		55877803D2A54E071663009B /* Pods-DigitasWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.release.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.release.xcconfig"; sourceTree = "<group>"; };
 		9C13C923A87DF7F6643B6BE7 /* Pods-DigitasWorld.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.release-qa.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.release-qa.xcconfig"; sourceTree = "<group>"; };
 		CCCEB293F6987447A1CDD11C /* Pods-DigitasWorld.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.debug-dev.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		D37E6CAE250222880020944B /* Country_MO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country_MO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D37E6CAF250222880020944B /* Country_MO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country_MO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D37E6CB2250222C60020944B /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		D37E6CB4250226E20020944B /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		D3874E9A25003C2100FD2B51 /* CountryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
 		D3874E9C25003C4800FD2B51 /* CountryDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailPresenter.swift; sourceTree = "<group>"; };
 		D3874E9E25003C5D00FD2B51 /* CountryDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRouter.swift; sourceTree = "<group>"; };
@@ -115,6 +123,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D37E6CAD250222440020944B /* CoreData Model */ = {
+			isa = PBXGroup;
+			children = (
+				D37E6CAE250222880020944B /* Country_MO+CoreDataClass.swift */,
+				D37E6CAF250222880020944B /* Country_MO+CoreDataProperties.swift */,
+			);
+			path = "CoreData Model";
+			sourceTree = "<group>";
+		};
 		D3874E9925003BF200FD2B51 /* CountryDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +164,7 @@
 		D3899D3324FFD30E00BD9104 /* DigitasWorld */ = {
 			isa = PBXGroup;
 			children = (
+				D37E6CAD250222440020944B /* CoreData Model */,
 				D3942CEC25010B8F00B51391 /* Network */,
 				D3942CE92500F70600B51391 /* Log */,
 				D3874E9925003BF200FD2B51 /* CountryDetail */,
@@ -182,6 +200,7 @@
 				D3899D5B24FFEB1500BD9104 /* ResourceType.swift */,
 				D3899D5D24FFEFF800BD9104 /* Constant.swift */,
 				D3899D5F24FFF5EF00BD9104 /* CustomError.swift */,
+				D37E6CB4250226E20020944B /* CoreDataHelper.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -204,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				D3899D6B24FFFF7400BD9104 /* BaseProtocol.swift */,
+				D37E6CB2250222C60020944B /* CoreDataService.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -352,8 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37E6CB3250222C60020944B /* CoreDataService.swift in Sources */,
 				D3899D6E25000CA200BD9104 /* Country.swift in Sources */,
+				D37E6CB5250226E20020944B /* CoreDataHelper.swift in Sources */,
 				D3874E9D25003C4800FD2B51 /* CountryDetailPresenter.swift in Sources */,
+				D37E6CB0250222880020944B /* Country_MO+CoreDataClass.swift in Sources */,
 				D3899D6924FFFB7400BD9104 /* CountryListInteractor.swift in Sources */,
 				D3899D732500172900BD9104 /* CountryCell.swift in Sources */,
 				D3899D5C24FFEB1500BD9104 /* ResourceType.swift in Sources */,
@@ -368,6 +391,7 @@
 				D3899D5E24FFEFF800BD9104 /* Constant.swift in Sources */,
 				D3942CEB2500F71600B51391 /* Log.swift in Sources */,
 				D3899D3524FFD30E00BD9104 /* AppDelegate.swift in Sources */,
+				D37E6CB1250222880020944B /* Country_MO+CoreDataProperties.swift in Sources */,
 				D3874EA125003C8700FD2B51 /* CountryDetailInteractor.swift in Sources */,
 				D3899D6024FFF5EF00BD9104 /* CustomError.swift in Sources */,
 				D3899D3F24FFD30E00BD9104 /* DigitasWorld.xcdatamodeld in Sources */,

@@ -17,6 +17,7 @@ enum CustomError: Error {
     case TimeOut //2102
     case ParsingError
     case BadRequest
+    case DatabaseError
   
     
     var localizedDescription: String {
@@ -35,6 +36,8 @@ enum CustomError: Error {
             return "Something went wrong, network failure!"
         case .ServerError:
             return "Server Error."
+        case .DatabaseError:
+            return "Local storage error, try again!"
         }
     }
 }

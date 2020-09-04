@@ -38,7 +38,21 @@ class CountryListPresenter: iCountryListPresenter {
     
     func getCountryList() {
         view?.willLoadData()
-        interactor.fetchAllCountry()
+        if (NetworkManager.sharedInstance.reachability.connection == .unavailable) {
+            do {
+                try interactor.fetchALLCountryLocally()
+            }
+            catch
+                CustomError.DatabaseError {
+                    view?.didFail(error: CustomError.DatabaseError)
+            }
+            catch let err {
+                view?.didFail(error: CustomError.HTTPError(err: err))
+            }
+        }
+        else {
+            interactor.fetchAllCountry()
+        }
     }
     
     func showDetail(for country: Country, source: UINavigationController?) {

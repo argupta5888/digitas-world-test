@@ -12,8 +12,8 @@ import os
 class CountryListVC: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     private let kCountryCell = "CountryCell"
     private let searchController = UISearchController(searchResultsController: nil)
     
@@ -32,21 +32,6 @@ class CountryListVC: UIViewController {
     
     private var isFiltering: Bool {
         return searchController.isActive && !isSearchBarEmpty
-    }
-    
-   @objc func updateList(_ control: UIRefreshControl) {
-    
-    if !(NetworkManager.sharedInstance.reachability.connection == .unavailable) && presenter.countries.count == 0 {
-        presenter.getCountryList()
-    }
-    else {
-        if isFiltering {
-            searchController.searchBar.text = nil
-            filteredCountries = presenter.countries
-            tblView.reloadData()
-        }
-    }
-        refereshControl.endRefreshing()
     }
     
     override func viewDidLoad() {
@@ -79,6 +64,21 @@ class CountryListVC: UIViewController {
         }
         tblView.reloadData()
     }
+    
+    @objc func updateList(_ control: UIRefreshControl) {
+     
+     if !(NetworkManager.sharedInstance.reachability.connection == .unavailable) && presenter.countries.count == 0 {
+         presenter.getCountryList()
+     }
+     else {
+         if isFiltering {
+             searchController.searchBar.text = nil
+             filteredCountries = presenter.countries
+             tblView.reloadData()
+         }
+     }
+         refereshControl.endRefreshing()
+     }
 }
 
 extension CountryListVC: UITableViewDelegate, UITableViewDataSource {
@@ -101,7 +101,6 @@ extension CountryListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //presenter.showDetail(index: indexPath.row, source: self.navigationController)
         let selectedCountry = isFiltering ? filteredCountries[indexPath.row] : presenter.countries[indexPath.row]
         presenter.showDetail(for:selectedCountry, source: self.navigationController)
     }
