@@ -9,7 +9,11 @@
 import Foundation
 import CoreData
 
-struct Country : Codable {
+protocol Storable {
+     func toCoreData(coreData: NSManagedObject)
+}
+
+struct Country : Codable, Storable {
     
     var name : String?
     var capital : String?
@@ -59,7 +63,7 @@ struct Country : Codable {
         }
     }
     
-    func modelToCoreData(coreData: NSManagedObject) {
+    func toCoreData(coreData: NSManagedObject) {
         guard let coreData = coreData as? Country_MO else {return}
         
         coreData.name = self.name
@@ -72,17 +76,17 @@ struct Country : Codable {
         coreData.region = self.region ?? ""
     }
     
-    mutating func coreDataToModel(coreData: NSManagedObject) {
-        guard let coreData = coreData as? Country_MO else {return}
-        
-        self.name = coreData.name
-        self.capital = coreData.capital
-        self.borders = coreData.borders as? [String]
-        self.currencies = coreData.currencies as? [String]
-        self.languages = coreData.languages as? [String]
-        self.latlng = coreData.latlng as? [Double]
-        self.population = Int(coreData.population)
-        self.region = coreData.region
-    }
+//    mutating func coreDataToModel(coreData: NSManagedObject) {
+//        guard let coreData = coreData as? Country_MO else {return}
+//
+//        self.name = coreData.name
+//        self.capital = coreData.capital
+//        self.borders = coreData.borders as? [String]
+//        self.currencies = coreData.currencies as? [String]
+//        self.languages = coreData.languages as? [String]
+//        self.latlng = coreData.latlng as? [Double]
+//        self.population = Int(coreData.population)
+//        self.region = coreData.region
+//    }
 }
 

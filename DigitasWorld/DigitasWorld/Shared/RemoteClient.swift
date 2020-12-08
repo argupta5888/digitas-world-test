@@ -12,7 +12,6 @@ import os
 import Reachability
 
 
-
 enum DResult<T> {
     case success([T])
     case failure(CustomError)

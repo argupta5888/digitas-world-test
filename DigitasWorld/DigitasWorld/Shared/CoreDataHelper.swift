@@ -11,15 +11,15 @@ import CoreData
 
 class CoreDataHelper {
     
-    static func saveRecord(entity: NSManagedObject.Type, list:[Country]) throws {
+    static func saveRecord<T: NSManagedObject, K: Storable>(entity: T.Type, list:[K]) throws {
         
         let service = CoreDataService.shared
         let context = service.managedObjectContext
         
         
         for item in list {
-            let coreObject = NSEntityDescription.insertNewObject(forEntityName: String(describing:"Country_MO"), into: context)
-            item.modelToCoreData(coreData: coreObject)
+            let coreObject = NSEntityDescription.insertNewObject(forEntityName: String(describing:entity), into: context)
+            item.toCoreData(coreData: coreObject)
             do {
                 try service.saveContext()
             }

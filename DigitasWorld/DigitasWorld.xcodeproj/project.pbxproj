@@ -42,7 +42,18 @@
 		D3899D7D2500226500BD9104 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3899D7C2500226500BD9104 /* Array.swift */; };
 		D3942CEB2500F71600B51391 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3942CEA2500F71600B51391 /* Log.swift */; };
 		D3942CEE25010BA500B51391 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3942CED25010BA500B51391 /* NetworkManager.swift */; };
+		D3DD441E250277DF00E83F64 /* DigitasWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD441D250277DF00E83F64 /* DigitasWorldTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DD4420250277E000E83F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3899D2924FFD30E00BD9104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3899D3024FFD30E00BD9104;
+			remoteInfo = DigitasWorld;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03DD30E0F7959160F51146C7 /* Pods-DigitasWorld.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitasWorld.debug-qa.xcconfig"; path = "Target Support Files/Pods-DigitasWorld/Pods-DigitasWorld.debug-qa.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +98,9 @@
 		D3899D7C2500226500BD9104 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		D3942CEA2500F71600B51391 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D3942CED25010BA500B51391 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D3DD441B250277DF00E83F64 /* DigitasWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitasWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DD441D250277DF00E83F64 /* DigitasWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitasWorldTests.swift; sourceTree = "<group>"; };
+		D3DD441F250277DF00E83F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD7AA52F71D55DD63876BF9 /* Pods_DigitasWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitasWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +110,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				38828F58160F2CD29ABF7232 /* Pods_DigitasWorld.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DD4418250277DF00E83F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				D3899D3324FFD30E00BD9104 /* DigitasWorld */,
+				D3DD441C250277DF00E83F64 /* DigitasWorldTests */,
 				D3899D3224FFD30E00BD9104 /* Products */,
 				7F953069EB98E83312E4233E /* Pods */,
 				96A4B20E22BF33026C7CC26A /* Frameworks */,
@@ -157,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				D3899D3124FFD30E00BD9104 /* DigitasWorld.app */,
+				D3DD441B250277DF00E83F64 /* DigitasWorldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +278,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D3DD441C250277DF00E83F64 /* DigitasWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD441D250277DF00E83F64 /* DigitasWorldTests.swift */,
+				D3DD441F250277DF00E83F64 /* Info.plist */,
+			);
+			path = DigitasWorldTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +309,24 @@
 			productReference = D3899D3124FFD30E00BD9104 /* DigitasWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D3DD441A250277DF00E83F64 /* DigitasWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DD4428250277E000E83F64 /* Build configuration list for PBXNativeTarget "DigitasWorldTests" */;
+			buildPhases = (
+				D3DD4417250277DF00E83F64 /* Sources */,
+				D3DD4418250277DF00E83F64 /* Frameworks */,
+				D3DD4419250277DF00E83F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3DD4421250277E000E83F64 /* PBXTargetDependency */,
+			);
+			name = DigitasWorldTests;
+			productName = DigitasWorldTests;
+			productReference = D3DD441B250277DF00E83F64 /* DigitasWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,6 +339,10 @@
 				TargetAttributes = {
 					D3899D3024FFD30E00BD9104 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					D3DD441A250277DF00E83F64 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D3899D3024FFD30E00BD9104;
 					};
 				};
 			};
@@ -306,6 +360,7 @@
 			projectRoot = "";
 			targets = (
 				D3899D3024FFD30E00BD9104 /* DigitasWorld */,
+				D3DD441A250277DF00E83F64 /* DigitasWorldTests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,6 +375,13 @@
 				D3899D4424FFD31000BD9104 /* LaunchScreen.storyboard in Resources */,
 				D3899D4124FFD31000BD9104 /* Assets.xcassets in Resources */,
 				D3899D3C24FFD30E00BD9104 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DD4419250277DF00E83F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +466,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3DD4417250277DF00E83F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DD441E250277DF00E83F64 /* DigitasWorldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3DD4421250277E000E83F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3899D3024FFD30E00BD9104 /* DigitasWorld */;
+			targetProxy = D3DD4420250277E000E83F64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D3899D3A24FFD30E00BD9104 /* Main.storyboard */ = {
@@ -888,6 +966,120 @@
 			};
 			name = "Release-QA";
 		};
+		D3DD4422250277E000E83F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitasWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitasWorld.app/DigitasWorld";
+			};
+			name = Debug;
+		};
+		D3DD4423250277E000E83F64 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitasWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitasWorld.app/DigitasWorld";
+			};
+			name = "Debug-DEV";
+		};
+		D3DD4424250277E000E83F64 /* Debug-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitasWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitasWorld.app/DigitasWorld";
+			};
+			name = "Debug-QA";
+		};
+		D3DD4425250277E000E83F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitasWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitasWorld.app/DigitasWorld";
+			};
+			name = Release;
+		};
+		D3DD4426250277E000E83F64 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitasWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitasWorld.app/DigitasWorld";
+			};
+			name = "Release-DEV";
+		};
+		D3DD4427250277E000E83F64 /* Release-QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitasWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esoftech.DigitasWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitasWorld.app/DigitasWorld";
+			};
+			name = "Release-QA";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -913,6 +1105,19 @@
 				D3899D4A24FFD31000BD9104 /* Release */,
 				D3899D4E24FFD33700BD9104 /* Release-DEV */,
 				D3899D5224FFD36300BD9104 /* Release-QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DD4428250277E000E83F64 /* Build configuration list for PBXNativeTarget "DigitasWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DD4422250277E000E83F64 /* Debug */,
+				D3DD4423250277E000E83F64 /* Debug-DEV */,
+				D3DD4424250277E000E83F64 /* Debug-QA */,
+				D3DD4425250277E000E83F64 /* Release */,
+				D3DD4426250277E000E83F64 /* Release-DEV */,
+				D3DD4427250277E000E83F64 /* Release-QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

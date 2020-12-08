@@ -15,14 +15,14 @@ protocol CountryListInteractable: AnyObject {
 
 protocol iCountryListInteractor {
     init(presenter: CountryListInteractable)
-    var  presenter: CountryListInteractable? {get set}
+  //  var  presenter: CountryListInteractable? {get set}
     func fetchAllCountry()
     func fetchALLCountryLocally() throws
 }
 
 class CountryListInteractor: iCountryListInteractor {
    
-    weak var presenter: CountryListInteractable?
+   private weak var presenter: CountryListInteractable?
     
     required init(presenter: CountryListInteractable) {
         self.presenter = presenter
@@ -50,7 +50,7 @@ class CountryListInteractor: iCountryListInteractor {
     private func writeToLocalStorage(list: [Country]) {
         
         do {
-            if (try CoreDataHelper.deleteAllFrom(entityName: "Country_MO"))  {
+            if (try CoreDataHelper.deleteAllFrom(entityName: Constant.kCountry_MO))  {
                 
                 try CoreDataHelper.saveRecord(entity: Country_MO.self, list: list)
                 presenter?.didFinishFetchingData(list: list)
@@ -67,12 +67,12 @@ class CountryListInteractor: iCountryListInteractor {
     
     func fetchALLCountryLocally() throws {
         do {
-           let result =  try CoreDataHelper.selectAllFrom(entity: "Country_MO") as [Country_MO]
+            let result =  try CoreDataHelper.selectAllFrom(entity: Constant.kCountry_MO) as [Country_MO]
             var countries: [Country] = []
             result.forEach { coreData in
-                var country = Country()
-                country.coreDataToModel(coreData: coreData)
-                countries.append(country)
+//                var country = Country()
+//                country.coreDataToModel(coreData: coreData)
+                countries.append(coreData.toModel())
             }
             presenter?.didFinishFetchingData(list: countries)
         }

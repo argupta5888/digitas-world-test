@@ -13,9 +13,9 @@ import CoreData
 
 extension Country_MO {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Country_MO> {
-        return NSFetchRequest<Country_MO>(entityName: "Country_MO")
-    }
+//    @nonobjc public class func fetchRequest() -> NSFetchRequest<Country_MO> {
+//        return NSFetchRequest<Country_MO>(entityName: "Country_MO")
+//    }
 
     @NSManaged public var borders: NSObject?
     @NSManaged public var capital: String?
@@ -24,6 +24,6 @@ extension Country_MO {
     @NSManaged public var latlng: NSObject?
     @NSManaged public var name: String?
     @NSManaged public var population: Int32
-     @NSManaged public var region: String?
+    @NSManaged public var region: String?
 
 }

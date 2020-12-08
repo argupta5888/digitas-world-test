@@ -23,7 +23,7 @@ protocol iCountryListPresenter: iPresenter {
 class CountryListPresenter: iCountryListPresenter {
     
     var countries: [Country] = []
-    weak var view: CountryListPresentable?
+    weak var view: CountryListPresentable? 
     var interactor: iCountryListInteractor!
     var router: CountryListRouter!
     
@@ -36,7 +36,7 @@ class CountryListPresenter: iCountryListPresenter {
         router = CountryListRouter()
     }
     
-    func getCountryList() {
+    func getCountryList()  {
         view?.willLoadData()
         if (NetworkManager.sharedInstance.reachability.connection == .unavailable) {
             do {
@@ -45,6 +45,7 @@ class CountryListPresenter: iCountryListPresenter {
             catch
                 CustomError.DatabaseError {
                     view?.didFail(error: CustomError.DatabaseError)
+                    
             }
             catch let err {
                 view?.didFail(error: CustomError.HTTPError(err: err))
