@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
+// MASTER
 extension Country_MO {
 
 //    @nonobjc public class func fetchRequest() -> NSFetchRequest<Country_MO> {
