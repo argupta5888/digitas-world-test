@@ -10,6 +10,8 @@
 import Foundation
 import CoreData
 
+//Hello
+
 @objc(Country_MO)
 public class Country_MO: NSManagedObject {
 
