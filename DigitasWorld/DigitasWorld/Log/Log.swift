@@ -18,3 +18,6 @@ struct Log {
 
 
 // First Commit
+
+
+//Added new details 
