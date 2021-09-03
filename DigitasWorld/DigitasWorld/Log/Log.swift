@@ -15,3 +15,6 @@ struct Log {
     static let networking = OSLog(subsystem: subsystem, category: "networking")
     static let table = OSLog(subsystem: subsystem, category: "table")
 }
+
+
+// First Commit
